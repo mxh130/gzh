@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 127.0.0.1:8080/mhxy/home/backmob/areaList -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商城</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="shopListCell" v-for="(item,index) in arr" @click="toInfo(index)">
+            <image class="shopListCellImage"></image>
+
+            <div class="shopListCellInfo">
+                <div class="shopListCellInfoTop">
+                    <span class="shopListCellInfoTopTitle">套票</span>
+                    <span class="shopListCellInfoTopTime">购买截止:2021-04-31</span>
+                </div>
+                <div class="shopListCellInfoMiddle">
+                    <span class="shopListCellInfoMiddleContent">洗浴+汗蒸+休息大厅</span>
+                </div>
+                <div class="shopListCellInfoBottom">
+                    <span class="shopListCellInfoBottomPrice">¥39.00</span>
+                    <span class="shopListCellInfoBottomOldPrice">¥89.00</span>
+                    <span class="shopListCellInfoBottomCount">已售82张</span>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/mint-ui/lib/index.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/mint-ui/lib/style.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script>
+        var app = new Vue({
+            el: '#app',
+
+            data: {
+                arr: ["吃饭", "睡觉"],
+            },
+            methods: {
+                getData: function () {
+                    axios.get("http://127.0.0.1:8080/mhxy/home/backmob/areaList").
+                        then(function (resp) {
+                            console.log(resp);
+                        }, function (err) {
+                            console.log(err);
+                        });
+                },
+                toInfo: function (index) {
+                    window.location.href = './info.html';
+                }
+            },
+        })
+    </script>
+</body>
+
+</html>

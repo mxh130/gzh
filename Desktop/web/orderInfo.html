@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>详情</title>
+</head>
+
+<body>
+  <link rel="stylesheet" href="./css/index.css">
+  <div id="app">
+    <div class="orderInfoCode">
+      <div class="orderInfoCodeInfo">
+        <div id="code">
+        </div>
+      </div>
+     
+    </div>
+    <div class="orderInfoOrderId">
+       订单编号：20102123124345
+       <span class="orderInfoTopState">未使用</span>
+       <span class="orderInfoTopState">复制</span>
+
+    </div>
+    
+    <div class="shopInfoMain">
+      <hr>
+
+      <div class="shopInfoMainTitle">洗浴+汗蒸+休息大厅</div>
+      <hr>
+      <div class="shopInfoTimeView">
+        <div><img class="shopInfoTipIcon" src="./res/time.png">
+          <span class="shopInfoTipTitle">有效期</span>
+        </div>
+        <div class="shopInfoTipContent">2018.1.1 至 2021.12.31（周末、法定节假日通用）</div>
+      </div>
+
+      <div class="shopInfoRuleView">
+        <div><img class="shopInfoTipIcon" src="./res/align-left.png">
+          <span class="shopInfoTipTitle">使用规则</span>
+        </div>
+        <div class="shopInfoTipContent">无需预约，消费高峰时可能需要等待</div>
+        <div class="shopInfoTipContent">购买用户不可同时享受商家其他优惠</div>
+        <div class="shopInfoTipContent">有效期以优惠券规则为准</div>
+        <div class="shopInfoTipContent">发票问题请咨询商家</div>
+      </div>
+
+
+    </div>
+    <script type="text/javascript" src="http://static.runoob.com/assets/qrcode/qrcode.min.js"></script>
+    <script>
+      var qrcode = new QRCode(document.getElementById("code"), {
+        width: 200,
+        height: 200
+      })
+
+      var url = location.href
+      qrcode.makeCode("www.baidu.com")
+
+    </script>
+</body>
+
+</html>

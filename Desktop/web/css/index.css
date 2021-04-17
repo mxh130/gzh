@@ -1,0 +1,295 @@
+
+body{
+	margin: 0; 
+	padding: 0;
+	border: 0;
+}
+
+/*----列表-----*/
+.app{
+    height: 100%;
+    position: relative;
+}
+.shopListCell{
+    height: 150px;
+    width: 100%;
+    width: 100%;
+    display: flex;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: #ccc;
+}
+.shopListCellImage{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background-color: #f1f1f1;
+    margin: auto 10px;
+}
+.shopListCellInfo{
+    margin: 15px 15px 15px 0;
+    flex-direction: column;
+    flex:1;
+    display: flex;
+}
+.shopListCellInfoTop{
+    line-height: 30px;
+
+    flex: 1;
+
+}
+.shopListCellInfoMiddle{
+    flex: 2;
+
+}
+.shopListCellInfoBottom{
+    line-height: 30px;
+    flex: 1;
+}
+
+.shopListCellInfoTopTitle{
+    font-size: 1.0rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.shopListCellInfoTopTime{
+    font-size: 1.0rem;
+    color: #0ca7ef;
+    float: right;
+}
+
+.shopListCellInfoTopState{
+    font-size: .8rem;
+    color: #0ca7ef;
+    float: right;
+    border: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    padding: 0 5px;
+}
+.shopListCellInfoMiddleContent{
+    font-size: 1.2rem;
+    color: gray;
+    line-height: 60px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+
+    /* -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow:ellipsis; */
+}
+.shopListCellInfoBottomPrice{
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+.shopListCellInfoBottomOldPrice{
+    font-size: 1.0em;
+    color: gray;
+    text-decoration:line-through
+}
+.shopListCellInfoBottomCount{
+    font-size: 1.0rem;
+    float: right;
+    color: #0ca7ef;
+}
+
+/*----详情-----*/
+.shopInfoBanner{
+    width: 100%;
+    height: auto;
+}
+.shopInfoMain{
+    margin: 0px 15px
+}
+.shopInfoMainTitle{
+    line-height: 50px;
+    font-size: 1.2rem;
+}
+.shopInfoMainView{
+    display: flex;
+    flex-direction: row;
+}
+.shopInfoPriceView{
+    flex: 1;
+}
+.shopInfoCountView{
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    border: solid;
+    border-width: 1px;
+    height: 40px;
+    border-color: #eee;
+}
+.shopInfoAdd{
+    flex: 1;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 40px;
+    background-color:#eee;
+
+}
+.shopInfoSub{
+    flex: 1;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 40px;
+    background-color:#eee;
+}
+.shopInfoCount{
+    flex: 1;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 40px;
+}
+
+.shopInfoTipIcon{
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    padding: 0 5px 0px 0;
+}
+.shopInfoTipTitle{
+    line-height: 30px;
+    font-size: 1.0rem;
+    vertical-align: middle;
+}
+.shopInfoTipContent{
+    line-height: 20px;
+    color: gray;
+    font-size: 0.8rem;
+    padding-left: 25px;
+}
+.shopInfoPayView{
+    padding-top: 10px;
+    padding-bottom: 200px;
+}
+.shopInfoRuleView{
+    padding-top: 10px;
+}
+.shopInfoTimeView{
+    padding-top: 10px;
+}
+.shopInfoPayRaido{
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
+    margin-left: 25px;
+
+}
+
+.shopInfoPayTypeImg{
+    height: 50px;
+    width: auto;
+    vertical-align: middle;
+}
+
+.shopInfoFunction{
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    border-top: solid;
+    border-width: 1px;
+    border-color: #ccc;;
+    flex-direction: row;
+}
+.shopInfoFunctionPriceView{
+    flex: 1;
+    line-height: 80px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.shopInfoFunctionPrice{
+    font-size: 1.8rem;
+    color: red;
+    padding-right: 20px;
+    font-weight: 800;
+}
+.shopInfoFunctionOldPrice{
+    font-size: 1.0rem;
+    color: gray;
+    text-decoration:line-through
+}
+.shopInfoFunctionSubmit{
+    width: 40%;
+    height: 80px;
+    background-color: red;
+    color: white;
+    font-size: 1.5rem;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 80px;
+}
+
+.orderUsed{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 1.0rem;
+    color: #0ca7ef;
+    border: solid;
+    height: 40px;
+    line-height: 40px;  
+    border-radius: 10px;
+    border-width: 1px;
+    padding: 0px 15px;
+    padding-top: 5px;
+    float: left;
+}
+.orderUnused{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 1.0rem;
+    background-color: #0ca7ef;
+    color: white;
+    border: solid;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    border-radius: 10px;
+    border-width: 1px;
+    padding: 0px 15px;
+    padding-top: 5px;
+}
+
+.orderTypeView{
+    height: 65px;
+    text-align:center;
+    background-color:#f1f2f6;
+}
+
+.orderInfoCode{
+    width: auto;
+    height: 200px;
+}
+.orderInfoCodeInfo{
+    width: 200px;
+    height: 200px;
+    vertical-align: middle;
+    margin: 25px auto;
+    text-align: center;
+    align-content: center;
+}
+.orderInfoOrderId{
+    padding-top: 10px;
+    line-height: 30px;
+    text-align: center;
+}
+.orderInfoTopState{
+    font-size: .8rem;
+    color: #0ca7ef;
+    border: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    margin-left: 5px;
+    padding: 5px 10px;
+}
